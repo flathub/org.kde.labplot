@@ -191,8 +191,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.3/src/cantor-25.04.3.tar.xz",
-                    "sha256": "1a7732a34bc703f2febeceb074fb2827f84adf913b86c115553d73a2eb67af05",
+                    "url": "https://download.kde.org/stable/release-service/25.08.0/src/cantor-25.08.0.tar.xz",
+                    "sha256": "5c98fa36bac3500a57d07813a101be709c58aa0ab755d4c9c9fa2b3f8836238d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 236341,
@@ -208,8 +208,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.kde.org/stable/release-service/25.04.3/src/analitza-25.04.3.tar.xz",
-                            "sha256": "5cd695fc83af74eedd3970725e35a6396120631e46866efc9094bce683ad626c",
+                            "url": "https://download.kde.org/stable/release-service/25.08.0/src/analitza-25.08.0.tar.xz",
+                            "sha256": "8d477f0af14bb9f7c15033a9d78987a7067135affc47f19eddda82e76c36d34b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 8763,
@@ -304,8 +304,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.bz2",
-                                    "sha256": "46d9d2c06637b219270877c9e16155cbd015b6dc84349af064c088e9b5b12f7b",
+                                    "url": "https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.bz2",
+                                    "sha256": "85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 6845,
@@ -419,8 +419,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/labplot/labplot-2.12.0.tar.xz",
-                    "sha256": "25f1751261ec2d11312f0179049ea1f16db33b3a89800dc572d68ad8d267afe7",
+                    "url": "https://download.kde.org/stable/labplot/labplot-2.12.1.tar.xz",
+                    "sha256": "e28155bfddf40e5b6f7c4791313556d1e48138044f216f210d515b9f6d6c106a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1532,
