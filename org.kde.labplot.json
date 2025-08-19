@@ -390,8 +390,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/api/v4/projects/orcus%2Forcus/packages/generic/source/0.20.1/liborcus-0.20.1.tar.xz",
-                    "sha256": "ec27f30e8445a2a3f307f7e829fc446fd48193150b7f8f23bb5bfb25ec6e4e27",
+                    "url": "https://gitlab.com/api/v4/projects/orcus%2Forcus/packages/generic/source/0.20.2/liborcus-0.20.2.tar.xz",
+                    "sha256": "85fb0af34042108f2b6aa8e7f3994fe972fd79efe3f1cd01dc7a49b0ffc5ca13",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1696,
@@ -421,6 +421,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/labplot/labplot-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "labplot-2.12.1.patch"
                 }
             ]
         }
