@@ -390,8 +390,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/api/v4/projects/orcus%2Forcus/packages/generic/source/0.20.2/liborcus-0.20.2.tar.xz",
-                    "sha256": "85fb0af34042108f2b6aa8e7f3994fe972fd79efe3f1cd01dc7a49b0ffc5ca13",
+                    "url": "https://gitlab.com/api/v4/projects/orcus%2Forcus/packages/generic/source/0.21.0/liborcus-0.21.0.tar.xz",
+                    "sha256": "1c6e473d6b8a63d61d0e6874a1762d6f0e0e78338d763e48ac93126ecde19b37",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1696,
