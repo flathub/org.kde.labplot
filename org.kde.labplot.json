@@ -150,6 +150,10 @@
                 {
                     "type": "patch",
                     "path": "readstat-1.1.9.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "b5512b32d3b3c39e2f0c322df1339a3c61f73712.patch"
                 }
             ]
         },
