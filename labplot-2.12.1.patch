@@ -1,3 +1,41 @@
+diff -ruNa a/cmake/FindOrcus.cmake b/cmake/FindOrcus.cmake
+--- a/cmake/FindOrcus.cmake	2025-08-15 01:00:33.000000000 +0200
++++ b/cmake/FindOrcus.cmake	2025-11-27 23:44:19.747530767 +0100
+@@ -14,21 +14,21 @@
+     set (Orcus_FOUND TRUE)
+ else ()
+     find_package(PkgConfig QUIET)
+-    pkg_search_module(PC_ORCUS liborcus liborcus-0.20 liborcus-0.19 liborcus-0.18 liborcus-0.17 liborcus-0.16 QUIET)
++    pkg_search_module(PC_ORCUS liborcus liborcus-0.21 liborcus-0.20 liborcus-0.19 liborcus-0.18 liborcus-0.17 liborcus-0.16 QUIET)
+     pkg_search_module(PC_IXION libixion libixion-0.20 libixion-0.19 libixion-0.18 libixion-0.17 libixion-0.16 QUIET)
+ 
+     find_library (Orcus_LIBRARY
+-        NAMES orcus orcus-0.20 orcus-0.19 orcus-0.18 orcus-0.17 orcus-0.16
++        NAMES orcus orcus-0.21 orcus-0.20 orcus-0.19 orcus-0.18 orcus-0.17 orcus-0.16
+         HINTS ${PC_ORCUS_LIBRARY_DIRS}
+         PATH_SUFFIXES orcus
+     )
+     find_library (Orcus_parser_LIBRARY
+-        NAMES orcus-parser orcus-parser-0.20 orcus-parser-0.19 orcus-parser-0.18 orcus-parser-0.17 orcus-parser-0.16
++        NAMES orcus-parser orcus-parser-0.21 orcus-parser-0.20 orcus-parser-0.19 orcus-parser-0.18 orcus-parser-0.17 orcus-parser-0.16
+         HINTS ${PC_ORCUS_LIBRARY_DIRS}
+         PATH_SUFFIXES orcus
+     )
+     find_library (Orcus_spreadsheet_LIBRARY
+-        NAMES orcus-spreadsheet-model orcus-spreadsheet-model-0.20 orcus-spreadsheet-model-0.19 orcus-spreadsheet-model-0.18 orcus-spreadsheet-model-0.17 orcus-spreadsheet-model-0.16
++        NAMES orcus-spreadsheet-model orcus-spreadsheet-model-0.21 orcus-spreadsheet-model-0.20 orcus-spreadsheet-model-0.19 orcus-spreadsheet-model-0.18 orcus-spreadsheet-model-0.17 orcus-spreadsheet-model-0.16
+         HINTS ${PC_ORCUS_LIBRARY_DIRS}
+         PATH_SUFFIXES orcus
+     )
+@@ -69,7 +69,7 @@
+     set(LIBIXION_VERSION ${PC_IXION_VERSION})
+     # latest version
+     if (NOT DEFINED LIBORCUS_VERSION)
+-        set(LIBORCUS_VERSION "0.20.0")
++        set(LIBORCUS_VERSION "0.21.0")
+     endif()
+     if (NOT DEFINED LIBIXION_VERSION)
+             set(LIBIXION_VERSION "0.20.0")
 diff -ruNa a/CMakeLists.txt b/CMakeLists.txt
 --- a/CMakeLists.txt	2025-08-15 01:00:33.000000000 +0200
 +++ b/CMakeLists.txt	2025-08-18 09:09:00.722239197 +0200
@@ -9,3 +47,14 @@ diff -ruNa a/CMakeLists.txt b/CMakeLists.txt
  set(YEAR 2025)
  
  set(CMAKE_C_STANDARD 99)
+diff -ruNa a/src/backend/worksheet/plots/cartesian/XYFourierFilterCurve.cpp b/src/backend/worksheet/plots/cartesian/XYFourierFilterCurve.cpp
+--- a/src/backend/worksheet/plots/cartesian/XYFourierFilterCurve.cpp	2025-08-15 01:00:36.000000000 +0200
++++ b/src/backend/worksheet/plots/cartesian/XYFourierFilterCurve.cpp	2025-11-27 23:36:50.625933555 +0100
+@@ -25,6 +25,7 @@
+ }
+ 
+ #include <QDebug> // qWarning()
++#include <QElapsedTimer>
+ #include <QIcon>
+ #include <QThreadPool>
+ 
