@@ -1,9 +1,9 @@
 {
     "app-id": "org.kde.labplot",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.9",
+    "runtime-version": "6.10",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.9",
+    "base-version": "6.10",
     "sdk": "org.kde.Sdk",
     "command": "labplot",
     "rename-icon": "labplot",
@@ -150,6 +150,10 @@
                 {
                     "type": "patch",
                     "path": "readstat-1.1.9.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "b5512b32d3b3c39e2f0c322df1339a3c61f73712.patch"
                 }
             ]
         },
@@ -370,34 +374,56 @@
             ]
         },
         {
-            "name": "libixion",
+            "name": "ixion",
+            "config-opts": [
+                "--with-boost=/app"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/api/v4/projects/ixion%2Fixion/packages/generic/source/0.20.0/libixion-0.20.0.tar.xz",
-                    "sha256": "8466a05f19f60b7568641a449704666308848f7bcaf8335f92ee9474a451e4cd",
+                    "url": "https://gitlab.com/ixion/ixion/-/archive/0.20.0/ixion-0.20.0.tar.bz2",
+                    "sha256": "39e54cd486fed458c2a6e83a5e658d4c2e818862355b33645bb1342449428463",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6208,
                         "stable-only": true,
-                        "url-template": "https://gitlab.com/api/v4/projects/ixion%2Fixion/packages/generic/source/$version/libixion-$version.tar.xz"
+                        "url-template": "https://gitlab.com/ixion/ixion/-/archive/$version/ixion-$version.tar.bz2"
                     }
                 }
             ]
         },
         {
-            "name": "liborcus",
+            "name": "orcus",
+            "config-opts": [
+                "--with-boost=/app"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/api/v4/projects/orcus%2Forcus/packages/generic/source/0.21.0/liborcus-0.21.0.tar.xz",
-                    "sha256": "1c6e473d6b8a63d61d0e6874a1762d6f0e0e78338d763e48ac93126ecde19b37",
+                    "url": "https://gitlab.com/orcus/orcus/-/archive/0.21.0/orcus-0.21.0.tar.bz2",
+                    "sha256": "3555660197d6d38d720643f430804bb0f95a484c1fe6c28c00808ae67f978d15",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1696,
                         "stable-only": true,
-                        "url-template": "https://gitlab.com/api/v4/projects/orcus%2Forcus/packages/generic/source/$version/liborcus-$version.tar.xz"
+                        "url-template": "https://gitlab.com/orcus/orcus/-/archive/$version/orcus-$version.tar.bz2"
                     }
+                }
+            ]
+        },
+        {
+            "name": "Qt-Advanced-Docking-System",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DADS_VERSION=4.0.3",
+                "-DQT_VERSION_MAJOR=6",
+                "-DCMAKE_CXX_FLAGS=-I/usr/include/QtGui/6.10.0/QtGui"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System.git",
+                    "commit": "a940fc29c6d1fbcb5ee1e2fecf86f20bb86a7fb6"
                 }
             ]
         },
