@@ -415,10 +415,6 @@
 	    "name": "QXlsx",
             "buildsystem": "cmake-ninja",
 	    "subdir": "QXlsx",
-            "config-opts": [
-                "-DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin",
-		"-DQT_DEBUG_FIND_PACKAGE=ON"
-            ],
 	    "sources": [
                 {
 		    "type": "archive",
