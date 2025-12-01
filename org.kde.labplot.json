@@ -415,6 +415,9 @@
 	    "name": "QXlsx",
             "buildsystem": "cmake-ninja",
 	    "subdir": "QXlsx",
+            "config-opts": [
+                "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
+            ],
 	    "sources": [
                 {
 		    "type": "archive",
