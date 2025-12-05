@@ -265,8 +265,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://poppler.freedesktop.org/poppler-25.11.0.tar.xz",
-                            "sha256": "63f155142b77349e2bccaef148e754e7506ab1641e713b83af4f54a8f8b15369",
+                            "url": "https://poppler.freedesktop.org/poppler-25.12.0.tar.xz",
+                            "sha256": "c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3686,
@@ -411,25 +411,25 @@
                 }
             ]
         },
-	{
-	    "name": "QXlsx",
+        {
+            "name": "QXlsx",
             "buildsystem": "cmake-ninja",
-	    "subdir": "QXlsx",
+            "subdir": "QXlsx",
             "config-opts": [
                 "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
             ],
-	    "sources": [
+            "sources": [
                 {
-		    "type": "archive",
-		    "url": "https://github.com/QtExcel/QXlsx/archive/refs/tags/v1.5.0.tar.gz",
-		    "sha256": "4461bb0fc9b88b6a970520e8b32eb7d2fc391a1a5c326b139a0af836278cdb09"
-		},
+                    "type": "archive",
+                    "url": "https://github.com/QtExcel/QXlsx/archive/refs/tags/v1.5.0.tar.gz",
+                    "sha256": "4461bb0fc9b88b6a970520e8b32eb7d2fc391a1a5c326b139a0af836278cdb09"
+                },
                 {
                     "type": "patch",
                     "path": "QXlsx-1.5.0.patch"
                 }
-	    ]
-	},
+            ]
+        },
         {
             "name": "Qt-Advanced-Docking-System",
             "buildsystem": "cmake-ninja",
