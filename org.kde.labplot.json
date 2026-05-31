@@ -108,8 +108,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/qt/qtmqtt/archive/refs/tags/v6.9.2.tar.gz",
-                    "sha256": "1d5edb5b78f3b3248211afb3bd98947ebefc0e3acdd2db2f000dcda1a0fb362b"
+                    "url": "https://github.com/qt/qtmqtt/archive/refs/tags/v6.10.3.tar.gz",
+                    "sha256": "a1759284b332f0b498b725be71addbc7f836b221b0c301d5013255606114c2a7"
                 }
             ]
         },
@@ -423,7 +423,7 @@
             "config-opts": [
                 "-DADS_VERSION=4.0.3",
                 "-DQT_VERSION_MAJOR=6",
-                "-DCMAKE_CXX_FLAGS=-I/usr/include/QtGui/6.10.2/QtGui"
+                "-DCMAKE_CXX_FLAGS=-I/usr/include/QtGui/6.10.3/QtGui"
             ],
             "sources": [
                 {
