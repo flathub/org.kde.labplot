@@ -89,8 +89,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.4.tar.gz",
-                    "sha256": "227b637b91c9820ea96f39a65eb087f053de567d82f4338e2884f123f8183c55",
+                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.7.0.tar.gz",
+                    "sha256": "ce573bbea8e75b429f8c3d3e86498741ba3dc9628a1530d2f65268397ad059e8",
                     "disable-http-decompression": true,
                     "x-checker-data": {
                         "type": "anitya",
@@ -120,8 +120,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.3/libcerf-v3.3.tar.gz",
-                    "sha256": "ea2910085448e269b5f0f0fabe51ffd846ac68881904be99669d94dc0cc09765",
+                    "url": "https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.9/libcerf-v3.9.tar.gz",
+                    "sha256": "094d39c7ea32682ba451a0c9b250545833cbb6cf24e0193fe727bdd39613b0eb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 20199,
@@ -201,8 +201,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.3/src/cantor-26.04.3.tar.xz",
-                    "sha256": "f0e9734410070b6ecb54dfe042862405b4ef01d65533c0be0386d13b9fdf7250",
+                    "url": "https://download.kde.org/stable/release-service/26.08.2/src/cantor-26.08.2.tar.xz",
+                    "sha256": "bb56336175e90870290e7432f35049ac50563a4dbbb9102efe7696af807b4377",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 236341,
@@ -218,8 +218,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.kde.org/stable/release-service/26.04.3/src/analitza-26.04.3.tar.xz",
-                            "sha256": "615b7c244a5baee0be5214c53b8ce37d0a54e69a6fd6b8438c30d7fda45b0746",
+                            "url": "https://download.kde.org/stable/release-service/26.08.2/src/analitza-26.08.2.tar.xz",
+                            "sha256": "f96d4eccc2057d70fa55da6829428e2a298eebe859262dea2a268c44ccfaa309",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 8763,
@@ -271,8 +271,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://poppler.freedesktop.org/poppler-26.07.0.tar.xz",
-                            "sha256": "304832f48f8a47fdca90c6b6d1f684e68f37c10c9a0726f345f4ca9df4ca01e2",
+                            "url": "https://poppler.freedesktop.org/poppler-26.10.0.tar.xz",
+                            "sha256": "6792cb7c69205007ad87d2e936cecc5b3a31fac29ab54ffc3175fdb6b2a6ce35",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3686,
