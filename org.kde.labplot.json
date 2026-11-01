@@ -108,8 +108,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/qt/qtmqtt/archive/refs/tags/v6.10.3.tar.gz",
-                    "sha256": "a1759284b332f0b498b725be71addbc7f836b221b0c301d5013255606114c2a7"
+                    "url": "https://github.com/qt/qtmqtt/archive/refs/tags/v6.11.3.tar.gz",
+                    "sha256": "969029a3fd18683d341481c2f1ee588d419c48d49adfc8f569b35bf98808a9dc"
                 }
             ]
         },
