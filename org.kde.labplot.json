@@ -8,11 +8,12 @@
     "command": "labplot",
     "rename-icon": "labplot",
     "finish-args": [
+        "--device=dri",
         "--filesystem=home",
         "--share=ipc",
         "--share=network",
-        "--device=dri",
-        "--socket=x11"
+        "--socket=fallback-x11",
+        "--socket=wayland"
     ],
     "cleanup": [
         "/include",
