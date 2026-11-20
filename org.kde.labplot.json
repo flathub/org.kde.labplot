@@ -156,11 +156,10 @@
                 },
                 {
                     "type": "patch",
-                    "path": "readstat-1.1.9.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "b5512b32d3b3c39e2f0c322df1339a3c61f73712.patch"
+                    "paths": [
+                        "patches/readstat-1.1.9.patch",
+                        "patches/b5512b32d3b3c39e2f0c322df1339a3c61f73712.patch"
+                    ]
                 }
             ]
         },
@@ -329,7 +328,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "dbc_parser_cpp.patch"
+                    "path": "patches/dbc_parser_cpp.patch"
                 }
             ]
         },
@@ -413,7 +412,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "QXlsx-1.5.0.patch"
+                    "path": "patches/QXlsx-1.5.0.patch"
                 }
             ]
         },
@@ -457,7 +456,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "labplot-2.12.1.patch"
+                    "path": "patches/labplot-2.12.1.patch"
                 }
             ]
         }
