@@ -354,6 +354,9 @@
                         "type": "anitya",
                         "project-id": 1962,
                         "stable-only": true,
+                        "versions": {
+                            "<": "4"
+                        },
                         "url-template": "https://gitlab.com/api/v4/projects/mdds%2Fmdds/packages/generic/source/$version/mdds-$version.tar.xz"
                     }
                 }
